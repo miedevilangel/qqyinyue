@@ -1,0 +1,40 @@
+<!--排名榜歌曲-->
+<div class="pmb-gequ">
+	<div class="pmb-gequ-img" style="background-image: url(https://y.gtimg.cn/music/photo_new/T002R300x300M000{{data.songlist[0].data.albummid}}.jpg?max_age=2592000);"></div>
+	<div class="pmb-gequ-beijing"></div>
+	<div class="pmb-gequ-ziti">
+		<div class="pmb-gequ-zitibeijing">
+			<p>{{data.topinfo.ListName}}</p>
+			<p>{{data.update_time}} 更新</p>
+		</div>
+	</div>
+</div>
+
+<!--排名榜播放曲-->
+<div class="pmb-gequ100">
+	<ul>
+		<li  ng-repeat="item in data.songlist" class="clearfix">
+			<a href="#/gequ/{{item.data.songid}}">
+				<div class="pmb-gequ100-shuzi fl">
+					<span>{{$index+1}}</span>
+				</div>
+				<div class="pmb-gequ100-ziti fl">
+					<p>{{item.data.songname}}</p>
+					<p>{{item.data.singer[0].name}} · {{item.data.albumname}} · {{item.data.albumdesc}}</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<!--动画-->
+<div id="loading" ng-if="donghua">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div class="object" id="object_four"></div>
+<div class="object" id="object_three"></div>
+<div class="object" id="object_two"></div>
+<div class="object" id="object_one"></div>
+</div>
+</div>
+</div>

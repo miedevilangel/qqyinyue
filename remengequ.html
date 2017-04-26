@@ -1,0 +1,29 @@
+<!--热门歌曲-->
+<div class="remengequ">
+	<ul>
+		<li ng-repeat="item in data.cdlist[0].songlist" class="clearfix">
+			<a href="#/gequ/{{item.id}}">
+		<div class="remengequ_img fl" style="background-image: url(//y.gtimg.cn/music/photo_new/T002R300x300M000{{item.album.mid}}.jpg);">
+
+		</div>
+				<div class="remengequ_ziti fl">
+				<p>{{item.title}}</p>
+				<p>{{item.album.name}}</p>
+				
+				</div>
+			</a>
+		</li>
+	</ul>
+	
+</div>
+<!--动画-->
+<div id="loading" ng-if="donghua">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div class="object" id="object_four"></div>
+<div class="object" id="object_three"></div>
+<div class="object" id="object_two"></div>
+<div class="object" id="object_one"></div>
+</div>
+</div>
+</div>

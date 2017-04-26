@@ -1,0 +1,64 @@
+/*排名榜*/
+.Ranking{
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
+	animation: Ranking 2s ease;
+	-moz-animation: Ranking 2s ease ;
+	-webkit-animation: Ranking 2s ease ;
+	-ms-animation: Ranking 2s ease ;
+}
+@keyframes Ranking{
+	0%{transform: scale(0.5);}
+	100%{transform: scale(1);}
+}
+@-webkit-keyframes Ranking{
+	0%{transform: scale(0.5);}
+	100%{transform: scale(1);}
+}
+@-moz-keyframes Ranking{
+	0%{transform: scale(0.5);}
+	100%{transform: scale(1);}
+}
+@-ms-keyframes Ranking{
+	0%{transform: scale(0.5);}
+	100%{transform: scale(1);}
+}
+.Ranking ul li {
+	margin-top: 10px;
+	position: relative;
+}
+.Ranking ul li a img{	
+	width: 100px;
+	height: 100px;
+}
+
+
+.Ranking-Typeface{
+	width:65%;
+	margin-left: 15px;
+	
+}
+.Ranking-Typeface h4{
+	line-height: 24px;
+	color: black;
+}
+.Ranking-Typeface p{	
+	font-size: 14px;
+	white-space:nowrap; 
+	text-overflow:ellipsis; 
+	-o-text-overflow:ellipsis; 
+	overflow: hidden; 
+	
+}
+.Ranking-Typeface p .Ranking-span-p{
+	color: black;
+}
+.youjiantou{
+	position: absolute;
+	right: 0px;
+	top: 35px;
+	font-size: 18px;
+	color: #666666;
+}
+

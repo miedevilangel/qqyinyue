@@ -1,0 +1,117 @@
+/*背景*/
+.gequ{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom center;
+    
+}
+.gequ-yinying{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.6;
+   
+}
+/*头部*/
+.gequ-heand{
+	width: 100%;
+	height: 110px;
+	background: rgba(0,0,0,.1);
+	position: relative;	
+	
+}
+.gequ-heand .gequ-img{
+	margin: 15px;
+	
+}
+.gequ-heand img{
+	width: 80px;
+	height: 80px;	
+	cursor: pointer;	
+}
+.gequ-heand .gequ-ziti{
+	margin-top: 15px;
+	line-height: 30px;
+
+	
+}
+.gequ-heand .gequ-ziti p{
+	color: white;
+}
+.gequ-tubiao{	
+	width: 45px;
+	height: 45px;
+	border: 1px solid #F4F4F4;
+	border-radius: 23px;
+	margin: 30px 20px 0 0;
+	text-align: center;
+	cursor: pointer;
+}
+.gequ-tubiao .icon-a{
+	width: 17px;
+	height: 19px;	
+	margin-left: 18px;
+	margin-top: 15px;
+	line-height: 19px;
+	background-position: 0 -180px;
+	cursor: pointer;
+	
+}
+/*歌曲*/
+
+.lyric {
+    /*display: -webkit-box;
+    -webkit-box-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;*/
+}
+.lyric__box {
+    position: relative;
+    width: 100%;
+    height: 336px;
+    overflow: hidden;
+}
+.lyric__text {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    min-height: 150px;
+    overflow: auto;
+}
+.lyric__text p{
+    height: 42px;
+    line-height: 42px;
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    color: rgba(255,255,255,.6);
+    text-align: center;
+}
+
+
+
+
+
+
+
+#videoId{
+	position: absolute;
+	bottom: 0px;		
+	width: 100%;
+	left: 0px;
+	z-index: -1;
+	
+}
+

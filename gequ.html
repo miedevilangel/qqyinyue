@@ -1,0 +1,39 @@
+<!--歌曲播放-->
+<!--背景-->
+<div class="gequ" style="background-image: url(https://y.gtimg.cn/music/photo_new/T002R300x300M000{{data.data.songinfo.albummid}}.jpg);">	
+</div>
+<div class="gequ-yinying"></div>
+<!--头部-->
+<div class="gequ-heand clearfix">
+	<div class="gequ-img fl"><img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000{{data.data.songinfo.albummid}}.jpg" alt="" /></div>
+	<div class="gequ-ziti fl">
+		<p>{{data.data.songinfo.songname}}</p>
+		<p>{{data.data.info[0].content[0].value}}</p>
+	</div>
+	<div class="gequ-tubiao fr" ng-click="iconPlay()">
+		<div class="icon-a"></div>
+	</div>
+</div>
+<!--歌曲-->
+<div class="flex_item">
+		<div class="lyric" id="lyric">
+			<div class="lyric__box" style="overflow: hidden;">
+				<div class="lyric__text" id="lyric_txt" >
+					<p  ng-repeat="item in locetex track by $index">{{item}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<video id="videoId" class="clearfix" ng-src="{{trustSrc(daurl)}}" controls autoplay="autoplay" loop="loop" ></video>
+<!--动画-->
+<div id="loading" ng-if="donghua">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div class="object" id="object_four"></div>
+<div class="object" id="object_three"></div>
+<div class="object" id="object_two"></div>
+<div class="object" id="object_one"></div>
+</div>
+</div>
+</div>

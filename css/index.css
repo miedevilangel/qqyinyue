@@ -1,0 +1,59 @@
+body{
+	background: #f4f4f4;
+	
+}
+.qq-heand{
+	position: relative;
+	width: 100%;
+	height: 44px;
+	background: #31c27c;
+}
+.qq-heand .qq-heand-img{
+	width: 90px;
+	height: 25px;
+	margin: 9px 0 0 10px;
+}
+.qq-heand-app{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    padding: 0 12px;
+    height: 28px;
+    line-height: 28px;
+    background: #149c5a;
+    color: #fff;
+    border-radius: 14px;
+    font-size: 14px;
+    
+}
+/*导航栏*/
+.qq-nav{
+	display: -webkit-box;
+	display: flex;
+    background: #fff;
+}
+.qq-nav a{
+	position: relative;
+    flex: 1;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0,0,0,.6);
+}
+.qq-nav .curret{
+	color: #31c27c;
+}
+.qq-nav .curret:after{
+	content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #31c27c;
+}
+

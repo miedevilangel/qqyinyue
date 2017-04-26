@@ -1,0 +1,112 @@
+/*排名榜歌曲*/
+.pmb-gequ{
+	position: relative;
+    overflow: hidden;
+}
+.pmb-gequ-img{
+	background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;     
+}
+.pmb-gequ-img::after{
+	content: "";
+    display: block;
+    padding-top: 100%;
+}
+.pmb-gequ-beijing{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    opacity: 0.5;
+    background-image: -webkit-linear-gradient(top,transparent,currentColor 80%),-moz-linear-gradient(top,transparent,currentColor 80%),-webkit-linear-gradient(top,transparent,currentColor 80%),-moz-linear-gradient(top,transparent,currentColor 80%),-ms-linear-gradient(top,transparent,currentColor 80%);
+}
+.pmb-gequ-beijing::after{
+	content: "";
+    display: block;
+    padding-top: 60%;
+    background-image: -webkit-linear-gradient(top,transparent,currentColor);
+     background-image: -moz-linear-gradient(top,transparent,currentColor);
+      background-image: -ms-linear-gradient(top,transparent,currentColor);
+}
+
+/*字体*/
+.pmb-gequ-ziti{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;	
+    
+}
+.pmb-gequ-zitibeijing{	
+    -webkit-box-align: center;
+    margin: 0 15px 25px;
+}
+.pmb-gequ-zitibeijing p:nth-child(1){
+	font-size: 24px;
+}
+/*排名榜播放曲*/
+.pmb-gequ100{
+	width: 100%;
+	background-color: #e0e0e0;
+	
+	
+}
+.pmb-gequ100 ul li {
+	width: 95%;
+	margin: 0 auto;
+	height: 60px;
+	border-bottom: 1px solid;
+    animation: pmb-gequ100ulli 2s ;
+    -webkit-animation: pmb-gequ100ulli 2s;
+    -moz-animation: pmb-gequ100ulli 2s;
+    -ms-animation: pmb-gequ100ulli 2s;
+}
+@keyframes pmb-gequ100ulli{
+	from{transform: translateX(400px);}
+	to{transform: translateX(0px);}
+}
+@-webkit-keyframes pmb-gequ100ulli{
+	from{transform: translateX(400px);}
+	to{transform: translateX(0px);}
+}
+@-moz-keyframes pmb-gequ100ulli{
+	from{transform: translateX(400px);}
+	to{transform: translateX(0px);}
+}
+@-ms-keyframes pmb-gequ100ulli{
+	from{transform: translateX(400px);}
+	to{transform: translateX(0px);}
+}
+.pmb-gequ100 ul li .pmb-gequ100-shuzi{
+	font-size: 18px;
+	line-height: 40px;
+}
+.pmb-gequ100 ul li .pmb-gequ100-ziti{
+	width: 88%;
+	white-space:nowrap; 
+	text-overflow:ellipsis; 
+	-o-text-overflow:ellipsis; 
+	overflow: hidden; 
+	margin-left: 15px;
+}
+.pmb-gequ100 ul li .pmb-gequ100-ziti p{
+	white-space:nowrap; 
+	text-overflow:ellipsis; 
+	-o-text-overflow:ellipsis; 
+	overflow: hidden; 
+	line-height: 30px;
+	color: ;
+}
+.pmb-gequ100 ul li .pmb-gequ100-ziti p:nth-child(1){
+	color: black;
+	font-size: 18px;
+}
+.pmb-gequ100 ul li .pmb-gequ100-ziti p:nth-child(2){
+	font-size: 14px;
+}
+
+    
+    

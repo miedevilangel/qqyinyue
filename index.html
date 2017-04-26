@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/yangshi.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Recommend.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Ranking.css"/>
+		<link rel="stylesheet" type="text/css" href="css/search.css"/>
+		<link rel="stylesheet" type="text/css" href="css/remengequ.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gequ.css"/>
+		<link rel="stylesheet" type="text/css" href="css/paimingzhishu.css"/>
+	</head>
+	<body ng-app="myApp">
+		
+		<!--内容-->
+		<div class="content" ng-view>
+			
+		</div>
+		<!--动画-->
+<div id="loading" ng-if="donghua">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div class="object" id="object_four"></div>
+<div class="object" id="object_three"></div>
+<div class="object" id="object_two"></div>
+<div class="object" id="object_one"></div>
+</div>
+</div>
+</div>
+		
+		<script src="js/angular.js"></script>
+		<script src="js/angular-route.js"></script>
+		<script src="js/animation.js"></script>
+		<script src="js/jsonp.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

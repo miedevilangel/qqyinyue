@@ -1,0 +1,81 @@
+/*热门歌曲*/
+.remengequ {
+	width: 95%;
+	margin: 0 auto;
+	
+}
+.remengequ ul li{
+	width: 100%;
+	margin:15px 0;
+	border: 1px solid #808080;
+	border-radius: 50px 50px 0 50px;
+	animation: remengequulli 2s ease;
+	-moz-animation: remengequulli 2s ease ;
+	-webkit-animation: remengequulli 2s ease ;
+	-ms-animation: remengequulli 2s ease ;
+}
+@keyframes remengequulli{
+	0%{transform: scale(.5) ;}
+	100%{transform: scale(1) ;}
+}
+@-webkit-keyframes remengequulli{
+	0%{transform: scale(.5) ;}
+	100%{transform: scale(1) ;}
+}
+@-moz-keyframes remengequulli{
+	0%{transform: scale(.5) ;}
+	100%{transform: scale(1) ;}
+}
+@-ms-keyframes remengequulli{
+	0%{transform: scale(.5) ;}
+	100%{transform: scale(1) ;}
+}
+
+.remengequ_img{
+	width: 60px;
+	height: 60px;
+	background-size: cover;
+	border-radius:40px;	
+	animation: remengequimg 4s ease 2s;
+	-moz-animation: remengequimg 4s ease 2s;
+	-webkit-animation: remengequimg 4s ease 2s;
+	-ms-animation: remengequimg 4s ease 2s;
+}
+@keyframes remengequimg{
+	from{transform: scale(.5) rotate(360deg);}
+	to{transform: scale(1) rotate(0deg);}
+}
+@-webkit-keyframes remengequimg{
+	from{transform: scale(.5) rotate(360deg);}
+	to{transform: scale(1) rotate(0deg);}
+}
+@-moz-keyframes remengequimg{
+	from{transform: scale(.5) rotate(360deg);}
+	to{transform: scale(1) rotate(0deg);}
+}
+@-ms-keyframes remengequimg{
+	from{transform: scale(.5) rotate(360deg);}
+	to{transform: scale(1) rotate(0deg);}
+}
+
+.remengequ_ziti {
+    width: 72%;
+	height: 60px;
+	line-height: 30px;
+	color: #333333;
+	margin: 0 0 0 15px;
+}
+.remengequ_ziti p{	
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 14px;
+	
+}
+.remengequ_ziti p:nth-child(1){
+	font-size: 18px;
+}
+.remengequ_ziti p:nth-child(2){
+	color: #666666;
+}
+

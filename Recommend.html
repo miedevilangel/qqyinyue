@@ -1,0 +1,88 @@
+<!--QQ音乐-->
+		<div class="qq-heand clearfix">
+			<img src="img/logo.png"/ class="qq-heand-img">
+			<div class="qq-heand-app fr">下载APP</div>
+		</div>
+		<!--导航栏-->
+		<div class="qq-nav" >
+			<a href="#Recommend" class="curret">推荐</a>
+			<a href="#Ranking">排行榜</a>
+			<a href="#search">搜索</a>
+		</div>
+	
+<!--轮播图-->
+            <div class="recommend">
+                <ul class="clearfix">  
+                	<li >
+                        <a href="javascript:;">
+                            <img src="{{data.slider[0].picUrl}}" alt="" />
+                        </a>
+                    </li>  
+                    <li ng-repeat="item in data.slider">
+                        <a href="javascript:;">
+                            <img src="{{item.picUrl}}" alt="" />
+                        </a>
+                    </li>   
+                    	<li >
+                        <a href="javascript:;">
+                            <img src="{{data.slider[4].picUrl}}" alt="" />
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="now"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>                    
+                </ul>
+            </div>
+<!--内容-->
+<div class="banxin">
+	<!--电台-->
+	<div class="station clearfix">
+		<p>电台</p>
+		<ul>
+			<li ng-repeat="item in data.radioList">
+				<a href="#">				
+						<img src="{{item.picUrl}}"/>
+						<h3>{{item.Ftitle}}</h3>
+				</a>
+			</li>
+			
+		</ul>
+		
+	</div>
+	<!--热门歌单-->
+	<div class="station">
+		<p>热门歌单</p>
+		<ul class="station-Hot">
+			<li ng-repeat="item in data.songList" class="clearfix">
+				<a href="#/remengequ/{{item.id}}">					    						
+						<div class="station-Hot-shuzi">
+							<img src="{{item.picUrl}}"/>
+							<i>{{item.accessnum|number}} <span class="icon-b fr"></span></i>
+						</div>
+						<div>
+						<h4>{{item.songListDesc}}</h4>
+						<p>{{item.songListAuthor}}</p>
+						</div>
+						
+				</a>
+			</li>			
+		</ul>
+		
+	</div>
+	
+</div>
+<!--动画-->
+<div id="loading" ng-if="donghua">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div class="object" id="object_four"></div>
+<div class="object" id="object_three"></div>
+<div class="object" id="object_two"></div>
+<div class="object" id="object_one"></div>
+</div>
+</div>
+</div>

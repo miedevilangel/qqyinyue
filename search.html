@@ -1,0 +1,66 @@
+<!--QQ音乐-->
+		<div class="qq-heand clearfix">
+			<img src="img/logo.png"/ class="qq-heand-img">
+			<div class="qq-heand-app fr">下载APP</div>
+		</div>
+		<!--导航栏-->
+		<div class="qq-nav" >
+			<a href="#Recommend" >推荐</a>
+			<a href="#Ranking">排行榜</a>
+			<a href="#search" class="curret">搜索</a>
+		</div>
+	
+<!--公共结束-->
+<div class="search_box">
+    <div class="search_box_bar">
+        <div class="search_bar_cont">
+            <form ng-submit="sear(mid)">
+                <input class="search_input" placeholder="搜索歌曲、歌单、专辑" ng-model="mid" ng-click="sehInp()">
+                <!--<span class="icon_search">搜索</span>
+                <span class="icon icon_delete">删除</span>-->
+            </form>
+        </div>
+        <div class="search_bar_tip_text" ng-if="sehInpif" ng-click="cancelIf()">取消</div>
+    </div>
+
+    <div class="mod_search_result" ng-if="!sehInpif">
+		<h3 class="result_tit">热门搜索</h3>
+		<div class="result_tags">
+		    <!--<a href="javascript:;" class="tag_s tag_hot">新歌速递</a>-->
+		    <a href="javascript:;" ng-repeat="it in dp" ng-click="midfun(it.k)">{{it.k}}</a>
+		</div>
+	</div>
+		<!--<p class="load_complete">已加载全部</p>-->
+</div>
+<div class="focus_wrapper" ng-if="resultif">
+	<ul class="search_content">
+        <li data-singermid="0025NhlN2yWrP4" ng-if="ngif">
+	        <span class="media avatar">
+	        	<img src="https://y.gtimg.cn/music/photo_new/T001R68x68M000{{data.data.zhida.singermid}}.jpg?max_age=2592000" alt="{{data.data.keyword}}">
+	        </span>
+	        <h6 class="main_tit">{{data.data.zhida.singername}}</h6>
+	        <p class="sub_tit"><span>单曲：{{data.data.zhida.songnum}}</span><span>专辑：{{data.data.zhida.albumnum}}</span></p>
+	    </li>
+	    
+	    <li class="search_lisa" ng-repeat="item in data.data.song.list">
+	    	<a href="#/gequ/{{item.songid}}"></a>
+	        <div class="focus_wrapper-imgd" style="background-image: url(https://y.gtimg.cn/music/photo_new/T002R150x150M000{{item.albummid}}.jpg?max_age=2592000);"></div>
+	        <h6 class="main_tit">{{item.songname}}</h6>
+	        
+	        <p class="sub_tit">{{item.singer[0].name}}</p>
+	    </li>
+	    
+	</ul>
+</div>
+<!--动画-->
+<div id="loading" ng-if="ngIf">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div class="object" id="object_four"></div>
+<div class="object" id="object_three"></div>
+<div class="object" id="object_two"></div>
+<div class="object" id="object_one"></div>
+</div>
+</div>
+</div>
+
